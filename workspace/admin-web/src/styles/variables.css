@@ -1,0 +1,111 @@
+:root {
+  /* ===== 主色系 (Web 后台比小程序更冷 5-10%) ===== */
+  --color-primary: #C5704F;
+  --color-primary-light: #E8A87C;
+  --color-primary-dark: #A05A3E;
+  --color-primary-bg: #FDF0E8;
+
+  /* ===== 辅色系 ===== */
+  --color-secondary: #6B9E7A;
+  --color-secondary-bg: #EBF4EE;
+  --color-accent: #E8C07A;
+  --color-accent-bg: #FDF6E8;
+
+  /* ===== 背景色系 ===== */
+  --color-bg-page: #F8F7F5;
+  --color-bg-card: #FFFFFF;
+  --color-bg-surface: #F5F2ED;
+  --color-bg-hover: #F5F0EB;
+  --color-border: #E8E3DA;
+  --color-border-light: #EFEBE3;
+
+  /* ===== 文字色系 ===== */
+  --color-text-primary: #3D2C2E;
+  --color-text-secondary: #6B5D5E;
+  --color-text-placeholder: #B8AAA5;
+  --color-text-on-primary: #FFFFFF;
+  --color-text-link: #C5704F;
+
+  /* ===== 状态色 ===== */
+  --color-status-pending: #C5704F;
+  --color-status-pending-bg: #FDF0E8;
+  --color-status-confirmed: #6B9E7A;
+  --color-status-confirmed-bg: #EBF4EE;
+  --color-status-rejected: #D4684A;
+  --color-status-rejected-bg: #FDEAE4;
+  --color-status-cancelled: #A89B95;
+  --color-status-cancelled-bg: #F2F0EE;
+  --color-status-completed: #6D8E9A;
+  --color-status-completed-bg: #EAF0F3;
+  --color-status-in-progress: #C5704F;
+  --color-status-in-progress-bg: #FDF0E8;
+
+  /* ===== 功能色 ===== */
+  --color-success: #6B9E7A;
+  --color-warning: #D4953A;
+  --color-danger: #D4684A;
+  --color-info: #6D8E9A;
+
+  /* ===== 字体层级 (Web) ===== */
+  --font-web-h1: 700 24px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-web-h2: 600 18px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-web-h3: 500 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-web-body: 400 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-web-caption: 400 12px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* ===== 间距 ===== */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-xxl: 64px;
+
+  /* ===== 圆角 ===== */
+  --radius-card: 12px;
+  --radius-card-sm: 8px;
+  --radius-button: 8px;
+  --radius-button-sm: 6px;
+  --radius-tag: 4px;
+  --radius-modal: 12px;
+  --radius-input: 6px;
+  --radius-image: 8px;
+
+  /* ===== 阴影 ===== */
+  --shadow-sm: 0 2px 8px rgba(107, 91, 75, 0.04);
+  --shadow-md: 0 4px 16px rgba(107, 91, 75, 0.08);
+  --shadow-lg: 0 8px 32px rgba(107, 91, 75, 0.12);
+
+  /* ===== 侧边栏 ===== */
+  --sidebar-width: 220px;
+  --sidebar-collapsed-width: 64px;
+  --sidebar-bg: #3D3530;
+  --sidebar-text: #C8C3BF;
+  --sidebar-active-bg: #C5704F;
+  --sidebar-active-text: #FFFFFF;
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.08);
+
+  /* ===== 顶栏 ===== */
+  --header-height: 56px;
+  --header-bg: #FFFFFF;
+  --header-border: #E8E3DA;
+
+  /* ===== 表格 ===== */
+  --table-header-bg: #FAFAF8;
+  --table-header-text: #6B5D5E;
+  --table-header-height: 44px;
+  --table-row-height: 48px;
+  --table-row-hover-bg: #F5F0EB;
+  --table-border: #E8E3DA;
+  --table-cell-padding: 0 16px;
+
+  /* ===== 输入框 (Web) ===== */
+  --input-height: 40px;
+  --input-bg: #FFFFFF;
+  --input-border: #D4D4D4;
+  --input-border-focus: #C5704F;
+  --input-border-error: #D4684A;
+  --input-radius: 6px;
+  --input-padding: 0 12px;
+  --input-font-size: 14px;
+}

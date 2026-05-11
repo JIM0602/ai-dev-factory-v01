@@ -1,0 +1,11 @@
+export { BaseRepository } from './base.repository';
+export { StoreRepository } from './store.repository';
+export { ReservationRuleRepository } from './reservation-rule.repository';
+export { MerchantAccountRepository } from './merchant-account.repository';
+export { ReservationRepository } from './reservation.repository';
+export { TimerSessionRepository } from './timer-session.repository';
+export { TimerExtensionRepository } from './timer-extension.repository';
+export { CouponRepository } from './coupon.repository';
+export { MemberRepository } from './member.repository';
+export { ConsumptionRecordRepository } from './consumption-record.repository';
+export { MessageRepository } from './message.repository';

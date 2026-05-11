@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build outputs
+dist/
+build/
+.output/
+.nuxt/
+.unpackage/
+
+# logs
+*.log
+logs/
+
+# environment secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Claude / AI temporary files
+.claude/.credentials*
+.claude/.cache/
+.claude/tmp/
+*.bak
+
+# database / local data
+*.sqlite
+*.sqlite3
+data/
+uploads/
+
+# test reports / screenshots if too large
+playwright-report/
+test-results/
+coverage/

@@ -1,0 +1,235 @@
+/* 拼豆店预约计时小程序 - 全局样式 */
+
+/* 页面级重置 */
+page {
+  box-sizing: border-box;
+}
+
+view, text, image, scroll-view, swiper, swiper-item, button, input, textarea {
+  box-sizing: border-box;
+}
+
+/* 通用工具类 */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.flex-1 { flex: 1; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* 文字层级 */
+.text-h1 { font: var(--font-h1); color: var(--color-text-primary); }
+.text-h2 { font: var(--font-h2); color: var(--color-text-primary); }
+.text-h3 { font: var(--font-h3); color: var(--color-text-primary); }
+.text-body { font: var(--font-body); color: var(--color-text-primary); }
+.text-caption { font: var(--font-caption); color: var(--color-text-secondary); }
+.text-small { font: var(--font-small); color: var(--color-text-placeholder); }
+.text-timer { font: var(--font-timer); }
+
+/* 颜色 */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-danger { color: var(--color-danger); }
+.text-warning { color: var(--color-warning); }
+.text-success { color: var(--color-success); }
+.text-muted { color: var(--color-text-secondary); }
+.text-link { color: var(--color-text-link); }
+
+/* 间距 */
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+.ml-sm { margin-left: var(--space-sm); }
+.mr-sm { margin-right: var(--space-sm); }
+
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.px-lg { padding-left: var(--space-lg); padding-right: var(--space-lg); }
+.py-md { padding-top: var(--space-md); padding-bottom: var(--space-md); }
+
+/* 安全区 */
+.safe-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.safe-bottom-min {
+  padding-bottom: 68rpx;
+}
+
+/* 隐藏滚动条 */
+.hide-scrollbar::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+/* 1px 细线 */
+.hairline {
+  border-width: 0.5rpx;
+}
+
+/* 省略号 */
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 按钮基础样式 */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  font: var(--font-button);
+  min-height: var(--btn-height);
+  border-radius: var(--radius-button);
+  padding: 0 var(--space-lg);
+  transition: all 0.15s ease;
+  position: relative;
+}
+.btn::after { border: none; }
+.btn:active { opacity: 0.85; transform: scale(0.98); }
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+.btn-primary:active { background: var(--color-primary-dark); }
+.btn-primary[disabled] {
+  background: #E8C4B8;
+  color: var(--color-text-on-primary);
+  opacity: 0.7;
+}
+
+.btn-secondary {
+  background: var(--color-bg-card);
+  color: var(--color-primary);
+  border: 2rpx solid var(--color-primary);
+}
+.btn-secondary:active { background: var(--color-primary-bg); }
+
+.btn-danger {
+  background: var(--color-bg-card);
+  color: var(--color-danger);
+  border: 2rpx solid var(--color-danger);
+}
+.btn-danger:active { background: #FDEDE9; }
+.btn-danger-solid {
+  background: var(--color-danger);
+  color: var(--color-text-on-primary);
+}
+.btn-danger-solid:active { opacity: 0.85; }
+
+.btn-success {
+  background: var(--color-secondary);
+  color: var(--color-text-on-primary);
+}
+.btn-success:active { background: #6A9E84; }
+
+.btn-text {
+  background: transparent;
+  color: var(--color-text-link);
+  font: var(--font-body);
+  min-height: auto;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-button-sm);
+}
+.btn-text:active { opacity: 0.7; }
+
+.btn-sm {
+  min-height: var(--btn-height-sm);
+  font: var(--font-small);
+  font-weight: 500;
+  padding: 0 var(--space-md);
+  border-radius: var(--radius-button-sm);
+}
+
+.btn-xs {
+  min-height: var(--btn-height-xs);
+  font: var(--font-small);
+  font-weight: 500;
+  padding: 0 var(--space-md);
+  border-radius: var(--radius-button-sm);
+}
+
+/* 卡片基础 */
+.card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.card-sm {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-card-sm);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+/* 骨架屏 shimmer 动画 */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #F5ECE3 25%, #FDF8F2 50%, #F5ECE3 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-card-sm);
+}
+
+/* 弹窗遮罩 */
+.overlay-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(61, 44, 46, 0.5);
+  z-index: 1000;
+  animation: fadeIn 200ms ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+/* 脉冲动画（计时紧急） */
+@keyframes pulse-critical {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+@keyframes breathe-color {
+  0% { color: #E76F51; }
+  50% { color: #C04030; }
+  100% { color: #E76F51; }
+}

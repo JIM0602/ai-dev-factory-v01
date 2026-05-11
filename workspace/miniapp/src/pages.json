@@ -1,0 +1,140 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^ui-(.*)": "@/components/$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/customer/store/index",
+      "style": {
+        "navigationBarTitleText": "门店主页",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/customer/reservation/create",
+      "style": {
+        "navigationBarTitleText": "发起预约",
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/customer/reservation/result",
+      "style": {
+        "navigationBarTitleText": "预约结果",
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/customer/reservation/my-list",
+      "style": {
+        "navigationBarTitleText": "我的预约",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/customer/reservation/detail",
+      "style": {
+        "navigationBarTitleText": "预约详情",
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/dashboard/index",
+      "style": {
+        "navigationBarTitleText": "工作台",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/reservation/list",
+      "style": {
+        "navigationBarTitleText": "预约管理",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/reservation/detail",
+      "style": {
+        "navigationBarTitleText": "预约详情",
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/reservation/add",
+      "style": {
+        "navigationBarTitleText": "添加预约",
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/timer/dashboard",
+      "style": {
+        "navigationBarTitleText": "计时看板",
+        "enablePullDownRefresh": false,
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/timer/checkin",
+      "style": {
+        "navigationBarTitleText": "到店登记",
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/timer/detail",
+      "style": {
+        "navigationBarTitleText": "计时详情",
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/member/search",
+      "style": {
+        "navigationBarTitleText": "会员查询",
+        "backgroundColor": "#FEF9F3"
+      }
+    },
+    {
+      "path": "pages/merchant/member/detail",
+      "style": {
+        "navigationBarTitleText": "会员详情",
+        "enablePullDownRefresh": false,
+        "backgroundColor": "#FEF9F3"
+      }
+    }
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#B8AAA5",
+    "selectedColor": "#E07A5F",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/customer/store/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/customer/reservation/my-list",
+        "text": "预约"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "拼豆店",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FEF9F3",
+    "backgroundColorTop": "#FEF9F3",
+    "backgroundColorBottom": "#FEF9F3"
+  }
+}

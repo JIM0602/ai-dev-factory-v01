@@ -1,0 +1,35 @@
+{
+  "name": "拼豆店预约计时",
+  "appid": "",
+  "description": "拼豆店预约计时小程序 - 预约、计时、管理一站式",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "enhance": true,
+      "postcss": true,
+      "preloadBackgroundData": false,
+      "minified": true,
+      "newFeature": true,
+      "coverView": true,
+      "nodeModules": true,
+      "autoAudits": false,
+      "showShadowRootInWxmlPanel": true,
+      "scopeDataCheck": false,
+      "uglifyFileName": false
+    },
+    "usingComponents": true,
+    "permission": {
+      "scope.userLocation": {
+        "desc": "需要获取您的位置信息用于导航到店"
+      }
+    },
+    "requiredPrivateInfos": ["getLocation", "chooseAddress"],
+    "plugins": {},
+    "lazyCodeLoading": "requiredComponents"
+  }
+}
