@@ -1,6 +1,6 @@
 ---
 name: miniapp-dev
-description: 负责微信小程序端开发，适合实现用户端预约流程、页面、组件和小程序交互。
+description: 负责微信小程序端开发。交付标准不是源码完成，而是生成微信开发者工具可打开目录。
 tools: Read, Write, Edit, MultiEdit, Glob, Grep, Bash
 ---
 
@@ -35,15 +35,27 @@ tools: Read, Write, Edit, MultiEdit, Glob, Grep, Bash
 - artifacts/04_ui_contest/final_design_rules.md
 - artifacts/05_plan/task_list.md
 
+## 交付标准（重要）
+
+小程序端不以源码完成为交付标准。
+
+必须执行或提供等价执行：
+```bash
+cd workspace/miniapp
+npm install
+npm run dev:mp-weixin
+```
+
+必须验证生成目录存在（如 workspace/miniapp/dist/dev/mp-weixin/app.json）。
+
+如果目录不存在，不能进入交付。
+
 你可以修改：
-- workspace/apps/miniapp/
-- workspace/packages/shared/
-- workspace/packages/types/
+- workspace/miniapp/
 
 你不要修改：
-- workspace/apps/api/
-- workspace/apps/merchant-web/
-- workspace/infra/
+- workspace/server/
+- workspace/admin-web/
 - .claude/
 - artifacts/02_product/
 - artifacts/03_architecture/
@@ -57,6 +69,7 @@ tools: Read, Write, Edit, MultiEdit, Glob, Grep, Bash
 - 按钮、卡片、间距、字号要统一。
 - 不要把业务逻辑全部堆在页面里，能拆组件就拆组件。
 - 不要过度设计。
+- 代码中的 import 必须正确：uni-app 生命周期（onLoad, onShow, onHide, onPullDownRefresh, onReachBottom）从 @dcloudio/uni-app 导入；Vue 生命周期（onMounted, onUnmounted, ref, computed 等）从 vue 导入。
 
 你必须输出：
 - 修改后的代码
@@ -69,3 +82,5 @@ miniapp_summary.md 必须包含：
 4. 还有哪些未完成
 5. 需要后端配合的问题
 6. 自测结果
+7. 构建是否成功
+8. 微信开发者工具应打开哪个目录

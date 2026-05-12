@@ -37,14 +37,11 @@ tools: Read, Write, Edit, MultiEdit, Glob, Grep, Bash
 - artifacts/05_plan/task_list.md
 
 你可以修改：
-- workspace/apps/merchant-web/
-- workspace/packages/shared/
-- workspace/packages/types/
+- workspace/admin-web/
 
 你不要修改：
-- workspace/apps/api/
-- workspace/apps/miniapp/
-- workspace/infra/
+- workspace/server/
+- workspace/miniapp/
 - .claude/
 - artifacts/02_product/
 - artifacts/03_architecture/

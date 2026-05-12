@@ -9,6 +9,8 @@ tools: Read, Write, Edit, Glob, Grep
 你的职责：
 把产品需求、技术架构、UI 设计规则拆成清晰的开发任务。
 
+前置条件：用户已输入 APPROVED_UI_OPTION
+
 你必须读取：
 - artifacts/02_product/prd.md
 - artifacts/02_product/page_list.md

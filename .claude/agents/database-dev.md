@@ -33,15 +33,11 @@ tools: Read, Write, Edit, MultiEdit, Glob, Grep, Bash
 - artifacts/05_plan/task_list.md
 
 你可以修改：
-- workspace/apps/api/prisma/
-- workspace/apps/api/migrations/
-- workspace/apps/api/src/database/
-- workspace/packages/types/
+- workspace/server/src/database/
 
 你不要修改：
-- workspace/apps/miniapp/
-- workspace/apps/merchant-web/
-- .claude/
+- workspace/miniapp/
+- workspace/admin-web/
 - artifacts/02_product/
 - artifacts/03_architecture/
 

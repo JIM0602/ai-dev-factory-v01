@@ -1,6 +1,6 @@
 ---
 name: delivery-agent
-description: 负责最终交付、部署说明、验收说明和经验总结。
+description: 负责最终交付、部署说明、验收说明和经验总结。必须通过全部交付门禁才能判定"允许交付"。
 tools: Read, Write, Edit, Glob, Grep, Bash
 ---
 
@@ -25,34 +25,61 @@ tools: Read, Write, Edit, Glob, Grep, Bash
 你必须输出：
 - artifacts/09_delivery/delivery_report.md
 - artifacts/09_delivery/deploy_guide.md
+- artifacts/09_delivery/local_preview_report.md
 - artifacts/10_learning/lessons_learned.md
 
-delivery_report.md 必须包含：
+## 交付门禁（必须全部通过）
+
+在判定"允许交付"前，必须逐项检查以下条件：
+
+| # | 条件 | 检查方式 |
+|---|------|----------|
+| 1 | 小程序生成微信开发者工具可打开目录 | 检查 workspace/miniapp/dist/ 下 app.json 存在 |
+| 2 | Web 前端可打开 | 使用 local-preview skill 验证 |
+| 3 | 后端可启动 | 使用 local-preview skill 验证 |
+| 4 | Review 无阻塞问题 | 查阅 artifacts/07_review/code_review_report.md |
+| 5 | Test 无阻塞问题 | 查阅 artifacts/08_test/test_report.md |
+
+**任一条件不满足，必须判定为"不允许交付"。**
+
+## delivery_report.md 必须包含
+
 1. 项目目标
 2. 已完成功能
 3. 未完成功能
 4. 用户端小程序功能
-5. 商家端小程序功能，如果本轮实现
+5. 商家端小程序功能
 6. 商家 Web 后台功能
 7. 后端功能
 8. 数据库功能
 9. 测试结论
 10. Review 结论
 11. 已知问题
-12. 是否建议交付
+12. 交付门禁逐项检查结果
+13. 最终判定：允许交付 / 不允许交付
 
-deploy_guide.md 必须包含：
+## deploy_guide.md 必须包含
+
 1. 环境要求
 2. 安装依赖
 3. 配置环境变量
 4. 数据库启动方式
 5. 后端启动方式
 6. 商家 Web 启动方式
-7. 小程序启动方式
+7. 小程序导入方式（微信开发者工具打开哪个目录）
 8. Docker Compose 部署方式，如果项目支持
 9. 常见问题
 
-lessons_learned.md 必须包含：
+## local_preview_report.md 必须包含
+
+由 local-preview skill 生成，deploy_guide.md 引用即可，不重复内容：
+- 后端访问地址
+- Web 访问地址
+- 启动是否成功
+- 失败原因和修复建议
+
+## lessons_learned.md 必须包含
+
 1. 本次流程中做得好的地方
 2. 本次返工的地方
 3. UI contest 的经验

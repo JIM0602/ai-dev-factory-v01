@@ -36,11 +36,10 @@ tools: Read, Write, Glob, Grep, Bash
 13. 是否有测试缺失
 
 你可以运行：
-- git diff
-- pnpm lint
-- pnpm test
-- pnpm build
+- npm test
+- npm run build
 - grep / rg 等检查命令
+- 检查 workspace/miniapp/dist/ 下是否有 app.json（小程序可打开检查）
 
 你必须输出：
 - artifacts/07_review/code_review_report.md

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import { onMounted } from '@dcloudio/uni-app';
+import { ref, computed, onMounted } from 'vue';
 import { useReservationStore } from '@/store/reservation';
 import { useStoreInfoStore } from '@/store/store';
 import { createMerchantReservation } from '@/api/reservation';
