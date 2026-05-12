@@ -56,6 +56,22 @@ tools: Read, Write, Edit, MultiEdit, Glob, Grep, Bash
 - 如果接口不满足后台需求，写入 artifacts/06_implementation/merchant_web_api_questions.md。
 - 必须遵守 final_design_rules.md 中的后台设计规则。
 
+## 交付标准（重要）
+
+商家 Web 后台不以源码完成为交付标准。
+
+必须至少验证：
+```bash
+cd workspace/admin-web
+npm install
+npm run dev
+```
+
+如果依赖后端，必须说明：
+- 后端启动命令
+- Web 访问地址
+- 如果打不开，具体错误是什么
+
 你必须输出：
 - 修改后的代码
 - artifacts/06_implementation/merchant_web_summary.md
@@ -67,3 +83,8 @@ merchant_web_summary.md 必须包含：
 4. 还有哪些未完成
 5. 需要后端配合的问题
 6. 自测结果
+7. 是否安装依赖成功
+8. 是否启动成功
+9. 访问地址
+10. 是否依赖后端
+11. 如果失败，失败原因

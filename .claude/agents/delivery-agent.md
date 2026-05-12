@@ -42,6 +42,17 @@ tools: Read, Write, Edit, Glob, Grep, Bash
 
 **任一条件不满足，必须判定为"不允许交付"。**
 
+### 门禁前置检查
+
+在逐项检查前，必须确认以下支撑文件已生成：
+
+| # | 条件 | 说明 |
+|---|------|------|
+| A | local_preview_report.md 存在 | 由 local-preview skill 生成，位于 artifacts/09_delivery/local_preview_report.md |
+| B | miniapp_open_guide.md 存在 | 由 miniapp-open-check skill 生成，位于 artifacts/08_test/miniapp_open_guide.md |
+
+**如果 A 或 B 缺失，不能判定允许交付。必须先运行对应的 skill 补齐报告。**
+
 ## delivery_report.md 必须包含
 
 1. 项目目标
